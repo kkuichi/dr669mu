@@ -8,14 +8,14 @@ Tento projekt implementuje sémantický vyhľadávací pipeline nad biomedicíns
 
 ```
 .
-├── pubmed_dataset.json          # Stiahnuté záznamy z PubMed (názov + abstrakt)
+├── pubmed_dataset.json          # Stiahnuté záznamy z PubMed (názov + abstrakt) (negenerované, viď .gitignore)
 ├── main.py                      # Krok 1 – sťahovanie záznamov z PubMed
 │
-├── embeddings/                  # Vygenerované embeddingy – BioBERT
+├── embeddings/                  # Vygenerované embeddingy – BioBERT (negenerované, viď .gitignore)
 │   ├── title_embeddings.npy
 │   ├── abstract_embeddings.npy
 │   └── combined_embeddings.npy
-├── embeddings2/                 # Vygenerované embeddingy – S-PubMedBERT
+├── embeddings2/                 # Vygenerované embeddingy – S-PubMedBERT (negenerované, viď .gitignore)
 │   ├── title_embeddings.npy
 │   ├── abstract_embeddings.npy
 │   └── combined_embeddings.npy
@@ -34,7 +34,7 @@ Tento projekt implementuje sémantický vyhľadávací pipeline nad biomedicíns
     ├── evaluate2.py             # Vyhodnotenie – Brute-force
     └── evaluate2_faiss.py       # Vyhodnotenie – FAISS
 ```
-
+> **Poznámka:** Súbory `embeddings/`, `embeddings2/` a `pubmed_dataset.json` nie sú súčasťou repozitára (veľkosť > 50–100 MB). Vygenerujte ich lokálne podľa krokov v sekcii ⚡ Spustenie.
 
 
 ## 🗄️ Dataset
