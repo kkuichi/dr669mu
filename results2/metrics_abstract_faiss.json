@@ -1,0 +1,31 @@
+{
+    "embedding_type": "abstract",
+    "model": "pritamdeka/S-PubMedBert-MS-MARCO",
+    "method": "faiss_ivf",
+    "n_questions": 4718,
+    "K_values": [
+        10,
+        20,
+        50,
+        100
+    ],
+    "avg_search_ms": 0.9285768545962592,
+    "metrics": {
+        "10": {
+            "precision": 0.36417973717676977,
+            "recall": 0.5314719093358481
+        },
+        "20": {
+            "precision": 0.2489508266214498,
+            "recall": 0.6292473900878125
+        },
+        "50": {
+            "precision": 0.12336583298007632,
+            "recall": 0.7129575255759917
+        },
+        "100": {
+            "precision": 0.06716405256464604,
+            "recall": 0.7542656555085004
+        }
+    }
+}

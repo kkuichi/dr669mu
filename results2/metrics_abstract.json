@@ -1,0 +1,29 @@
+{
+    "embedding_type": "abstract",
+    "model": "pritamdeka/S-PubMedBert-MS-MARCO",
+    "n_questions": 4718,
+    "K_values": [
+        10,
+        20,
+        50,
+        100
+    ],
+    "metrics": {
+        "10": {
+            "precision": 0.3956337431114879,
+            "recall": 0.5952821714123346
+        },
+        "20": {
+            "precision": 0.2743323442136498,
+            "recall": 0.7116694739474707
+        },
+        "50": {
+            "precision": 0.13791860958033067,
+            "recall": 0.813343867753742
+        },
+        "100": {
+            "precision": 0.07562738448495127,
+            "recall": 0.8648497022795345
+        }
+    }
+}
